@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student Registration</title>
+  <link rel="stylesheet" href="style1.css">
+</head>
+
+
+<body>
+
+  <h1>Welcome to student Sign Up page</h1>
+
+
+  <form action="#" name="Myform" method="post" onsubmit="return validateForm();">
+    <h2>Student Sign Up</h2>
+    <p>Please fill the form below to sign up!!</p>
+    <label for="name"><b>Name</b></label>
+    <input type="text" name="name" placeholder="Enter your name" id="name" />
+    <span class="form-error" id="name-error" style="color:red"></span>
+
+    <!-- <label for="gender"><b>Gender</b></label> -->
+    
+
+    <label for="email"><b>Email</b></label>
+    <input type="email" name="email" id="email" placeholder="Enter your email" />
+    <span class="form-error" id="email-error" style="color: red;"></span>
+
+    <label for="college"><b>College Name</b></label>
+    <input type="text" placeholder="Enter your college name" name="college" id="college" />
+    <span class="form-error" id="college-error" style="color:red"></span>
+
+    <label for="branch"><b>Branch</b></label>
+    <input type="text" name="branch" id="branch" placeholder="Enter your branch" />
+    <span class="form-error" id="branch-error" style="color:red"></span>
+
+    <label for="Registration Number"><b>Registration Number</b></label>
+    <input type="text" name="registration_number" id="reg-num" placeholder="Enter registration number" />
+    <span class="form-error" id="reg-error" style="color:red"></span>
+
+    <label for="DOB"><b>Date Of Birth</b></label>
+    <input type="date" name="dob" id="dob" />
+
+    
+    <span "><b>Gender:</b> &nbsp;<select name="gender" aria-placeholder="gender">
+      <option name="gender" id="gender" value="Male">Male</option> 
+      <option name="gender" id="gender" value="Male">Female</option>
+      <option name="gender" id="gender" value="Male">Others</option>   
+    </select></span>
+
+    <label for="address"><b>Address</b></label>
+    <input type="text" id="add" name="address" placeholder="Enter address" />
+    <span class="form-error" id="add-error" style="color:red"></span>
+
+    <label for="number"><b>Contact Number</b></label>
+    <input type="number" id="contact-number" name="contact-number" placeholder="Enter Contact Number" />
+    <span class="form-error" id="num-error" style="color:red"></span>
+
+    <label for="pwd"><b>Password</b></label>
+    <input type="password" id="password" name="password" placeholder="Enter Password" />
+    <span class="form-class" id="pass-error" style="color:red"></span>
+
+    <label for="confirmpwd"><b>Confirm Password</b></label>
+    <input type="password" id="confirmpassword" name="confirmpassword" placeholder="Confirm Password" />
+    <span class="form-error" id="con-pass-error" style="color:red"></span>
+
+    <button type="submit" name="submit" value="submit">Register</button>
+    <p style="color:blue">Already have an account? <a style="color:blue" href="studentlogin.html"><b>Log in</b></a>.</p>
+  </form>
+
+  <script src="studentvalidation.js"></script>
+
+</body>
+
+</html>
